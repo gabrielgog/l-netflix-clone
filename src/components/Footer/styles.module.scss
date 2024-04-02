@@ -1,0 +1,22 @@
+.footer {
+  margin: 0 auto;
+  padding: 2rem 20px 1rem;
+
+  @media (min-width: 885px) {
+    max-width: 980px;
+    padding: 2rem 60px 1rem;
+  }
+}
+
+.footerContainer {
+
+  @media (min-width: 420px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 885px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

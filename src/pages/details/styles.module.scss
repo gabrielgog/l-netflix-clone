@@ -1,0 +1,19 @@
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 2rem 20px;
+}
+
+.content {
+  padding: 1rem 0;
+
+  @media (min-width: 420px) {
+    display: grid;
+    grid-template-columns: 3fr;
+  }
+
+  @media (min-width: 885px) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}

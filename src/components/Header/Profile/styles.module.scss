@@ -1,0 +1,9 @@
+.profile {
+  border-radius: 4px;
+  display: none;
+  overflow: hidden;
+
+  @media (min-width: 885px) {
+    display: flex;
+  }
+}

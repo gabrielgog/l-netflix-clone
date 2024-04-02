@@ -1,0 +1,53 @@
+.progressChartWrapper {
+  display: flex;
+}
+
+.progressChartSingleChart {
+  justify-content: space-around;
+  width: 100%;
+}
+
+.progressChart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.progressChartCircleBg {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 3;
+}
+
+.progressChartCircle {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.progressChartRed .progressChartCircle {
+  stroke: var(--danger-text-color);
+}
+
+.progressChartOrange .progressChartCircle {
+  stroke: var(--warning-text-color);
+}
+
+.progressChartGreen .progressChartCircle {
+  stroke: var(--success-text-color);
+}
+
+.progressChartPercentage {
+  fill: #eee;
+  font-size: 0.5em;
+  font-weight: 600;
+  text-anchor: middle;
+}
